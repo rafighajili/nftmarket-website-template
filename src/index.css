@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-Montserrat scroll-smooth;
+}
+
+body {
+  @apply bg-dark text-white;
+}
+
+::selection {
+  @apply bg-primary text-white;
+}
+
+img {
+  @apply pointer-events-none select-none;
+}
+
+.ellipse {
+  clip-path: ellipse();
+  background-color: #3a3653;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl font-black tracking-wide;
+}
+
+h2 {
+  @apply text-lg font-bold;
+}
+
+p {
+  @apply leading-relaxed text-light;
+}
+
+.swiper-pagination {
+  @apply flex justify-center gap-2 mb-[-10px];
+}
+
+.swiper-pagination-bullet {
+  @apply h-5 w-5 opacity-100 bg-forItem hover:bg-forHoveredItem duration-200;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-white hover:bg-white;
+}
+
+.glow-effect {
+  filter: drop-shadow(0px 1px 11px rgba(255, 255, 255, 0.08));
+}
